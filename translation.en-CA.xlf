@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="en-CA" original="Please update this value">
+    <body>
+      <group id="body">
+        <trans-unit id="Report 1116207556 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer Balance to Date</source>
+          <target>Customer Balance to Date</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Customer - Balance to Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1116207556 - Control 2346885236 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Options</source>
+          <target>Options</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Customer - Balance to Date - Control Options - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1116207556 - Control 458406397 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ending Date</source>
+          <target>Ending Date</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Customer - Balance to Date - Control Ending Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1116207556 - Control 458406397 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the last date until which information in the report is shown. If left blank, the report shows information until the present time.</source>
+          <target>Specifies the last date until which information in the report is shown. If left blank, the report shows information until the present time.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Customer - Balance to Date - Control Ending Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 1116207556 - Control 3287144200 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Show Amounts in $</source>
+          <target>Show Amounts in $</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Customer - Balance to Date - Control PrintAmountInLCY - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1116207556 - Control 3287144200 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if amounts in the report are displayed in $. If you leave the check box blank, amounts are shown in foreign currencies.</source>
+          <target>Specifies if amounts in the report are displayed in $. If you leave the check box blank, amounts are shown in foreign currencies.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Customer - Balance to Date - Control PrintAmountInLCY - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 1116207556 - Control 79950944 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>New Page per Customer</source>
+          <target>New Page per Customer</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Customer - Balance to Date - Control PrintOnePrPage - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1116207556 - Control 79950944 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if each customer balance is printed on a separate page, in case two or more customers are included in the report.</source>
+          <target>Specifies if each customer balance is printed on a separate page, in case two or more customers are included in the report.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Customer - Balance to Date - Control PrintOnePrPage - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 1116207556 - Control 1196418791 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Include Unapplied Entries</source>
+          <target>Include Unapplied Entries</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Customer - Balance to Date - Control PrintUnappliedEntries - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1116207556 - Control 1196418791 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if unapplied entries are included in the report.</source>
+          <target>Specifies if unapplied entries are included in the report.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Customer - Balance to Date - Control PrintUnappliedEntries - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 1116207556 - Control 1580087729 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Show Entries with Zero Balance</source>
+          <target>Show Entries with Zero Balance</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Customer - Balance to Date - Control ShowEntriesWithZeroBalance - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1116207556 - Control 1580087729 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if the report must include entries with a balance of 0. By default, the report only includes entries with a positive or negative balance.</source>
+          <target>Specifies if the report must include entries with a balance of 0. By default, the report only includes entries with a positive or negative balance.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Customer - Balance to Date - Control ShowEntriesWithZeroBalance - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 1116207556 - NamedType 2476940767" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Balance on %1</source>
+          <target>Balance on %1</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Customer - Balance to Date - NamedType Text000</note>
+        </trans-unit>
+        <trans-unit id="Report 1116207556 - NamedType 1288385384" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer - Balance to Date</source>
+          <target>Customer - Balance to Date</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Customer - Balance to Date - NamedType CustBalancetoDateCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1116207556 - NamedType 684809554" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Page</source>
+          <target>Page</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Customer - Balance to Date - NamedType CurrReportPageNoCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1116207556 - NamedType 154103091" size-unit="char" translate="yes" xml:space="preserve">
+          <source>All amounts are in $.</source>
+          <target>All amounts are in $.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Customer - Balance to Date - NamedType AllamtsareinLCYCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1116207556 - NamedType 69404221" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posting Date</source>
+          <target>Posting Date</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Customer - Balance to Date - NamedType CustLedgEntryPostingDtCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1116207556 - NamedType 1564621511" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Amount</source>
+          <target>Amount</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Customer - Balance to Date - NamedType OriginalAmtCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1116207556 - NamedType 1583171122" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total</source>
+          <target>Total</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Customer - Balance to Date - NamedType TotalCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1116207556 - NamedType 1897341201" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ending Date must have a value.</source>
+          <target>Ending Date must have a value.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Customer - Balance to Date - NamedType BlankMaxDateErr</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

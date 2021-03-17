@@ -1,0 +1,20 @@
+{
+  "id": "a145f954-32e0-40c2-b562-8d3280a2fa02",
+  "name": "EN Sales 1",
+  "publisher": "Default publisher",
+  "version": "1.0.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "14.0.0.0",
+  "application": "14.0.0.0",
+  "contextSensitiveHelpUrl": "https://ENSales1.com/help/",
+  "showMyCode": true,
+  "runtime": "3.0"
+}
