@@ -1,7 +1,7 @@
 page 14228900 "Sales Guide Order Entry Page"
 {
     ApplicationArea = All;
-    UsageCategory = Lists;
+    UsageCategory = Documents;
     Caption = 'Terminal Market Sales Order';
 
     PageType = Document;

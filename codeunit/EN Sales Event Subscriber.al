@@ -55,7 +55,6 @@ codeunit 14228911 "EN Sales-Post Event"
     end;
 
     procedure SetSkipPaymentLineUpdate(NewSkipPaymentLineUpdate: Boolean)
-
     begin
         SkipPaymentLineUpdate := NewSkipPaymentLineUpdate;
     end;

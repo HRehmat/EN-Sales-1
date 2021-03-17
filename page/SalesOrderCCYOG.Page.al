@@ -614,6 +614,7 @@ page 14228880 "Sales Order C&C Card"
     end;
 
     trigger OnOpenPage()
+
     begin
         if UserMgt.GetSalesFilter <> '' then begin
             FilterGroup(2);
@@ -621,9 +622,9 @@ page 14228880 "Sales Order C&C Card"
             FilterGroup(0);
         end;
 
-        if UserMgtExt.GetSalesLocationFilter() <> '' then begin
+        if gcduYOGFunctions.GetSalesLocationFilter() <> '' then begin
             FilterGroup(2);
-            SetFilter("Location Code", UserMgtExt.GetSalesLocationFilter());
+            SetFilter("Location Code", gcduYOGFunctions.GetSalesLocationFilter());
             FilterGroup(0);
         end;
 
@@ -651,7 +652,7 @@ page 14228880 "Sales Order C&C Card"
         ArchiveManagement: Codeunit ArchiveManagement;
         ChangeExchangeRate: Page "Change Exchange Rate";
         UserMgt: Codeunit "User Setup Management";
-        UserMgtExt: Codeunit "User Setup Management Ext";
+
         Usage: Option "Order Confirmation","Work Order","Pick Instruction";
         [InDataSet]
         JobQueueVisible: Boolean;

@@ -16,6 +16,7 @@ codeunit 14228880 YOGCustomJFFunctions
         gdecQtyGone: Decimal;
         gdecQtyAvailable: Decimal;
         grecWhseSetup: Record "Warehouse Setup";
+        gcodSalesLocation: Code[250];
 
         grecWhseActHdrTMP: Record "Warehouse Activity Header" temporary;
         grecWhseActLineTMP: Record "Warehouse Activity Line" temporary;
@@ -1003,6 +1004,24 @@ codeunit 14228880 YOGCustomJFFunctions
         ELSE
             precSalesLineVAR."Authorized Price below Cost" := AuthUser;
 
+    end;
+
+    procedure GetSalesLocationFilter(): Code[250]
+
+    begin
+        EXIT(GetSalesLocationFilter2(USERID));
+    end;
+
+    procedure GetSalesLocationFilter2(UserCode: Code[50]): Code[250]
+    var
+        myInt: Integer;
+    begin
+        IF (UserSetup.GET(UserCode)) AND (UserCode <> '') THEN BEGIN
+            IF UserSetup."Sales Location Filter" <> '' THEN BEGIN
+                gcodSalesLocation := UserSetup."Sales Location Filter" + '|' + '''' + '''';
+            END;
+        END;
+        EXIT(gcodSalesLocation);
     end;
 
 }

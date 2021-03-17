@@ -1,6 +1,6 @@
 page 14228903 "Term. Market Sales Order List"
 {
-    Caption = 'Sales Orders';
+    Caption = 'Terminal Market Sales Orders List';
     CardPageID = "Sales Guide Order Entry Page";
     Editable = false;
     PageType = List;
