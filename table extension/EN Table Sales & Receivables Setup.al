@@ -5,10 +5,12 @@ tableextension 14228884 "Sales & Receivables Setup Ext" extends "Sales & Receiva
         field(14228880; "C&C Cash Journal Template"; Code[10])
         {
             DataClassification = ToBeClassified;
+            TableRelation = "Gen. Journal Template";
         }
         field(14228881; "C&C Cash Journal Batch"; Code[10])
         {
             DataClassification = ToBeClassified;
+            TableRelation = "Gen. Journal Template";
         }
         field(14228882; "C&C Minimum Overdue Invoice"; Decimal)
         {

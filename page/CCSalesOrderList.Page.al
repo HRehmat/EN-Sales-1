@@ -2,9 +2,11 @@ page 14228885 "CC Sales Order List"
 {
     Caption = 'Sales Order Cash & Carry List';
     PageType = List;
-    CardPageId = "Sales Order C&C Card";
+
     ApplicationArea = All;
+    Editable = false;
     UsageCategory = Lists;
+    CardPageId = "Sales Order C&C Card";
     SourceTable = "Sales Header";
     SourceTableView = SORTING("Document Type", "No.") ORDER(descending) WHERE("Document Type" = CONST(Order), "Cash & Carry" = CONST(true));
 

@@ -746,7 +746,6 @@ page 14228880 "Sales Order C&C Card"
 
     procedure AdjustShortages()
     begin
-
         lcduCreateIJ.CreateQuickItemJnl(Rec); // CU "Create/Post Quick Item Journal"
     end;
 
@@ -796,28 +795,25 @@ page 14228880 "Sales Order C&C Card"
             exit(false);
         end;
 
-
-
-
         gblnAfterPosting := true;
 
+        Commit();
 
         if CustLedger.Find('+') then
             EntryNo := CustLedger."Entry No."
         else
             EntryNo := 0;
-        Commit();
 
         if not Confirm('Post order?', true) then
             exit(false);
 
-
         SlsHdr.Get("Document Type", "No.");
+
         SlsHdr.Ship := true;
         SlsHdr.Invoice := true;
         YGGetUserSetupForCCInfo;
 
-        COMMIT;
+
 
         if (grecUserSetup.IsEmpty) or (grecUserSetup."CC Cash Journal Template" = '') then begin
             Payment.SetRange("Journal Template Name", grecSalesAndRecSetup."C&C Cash Journal Template");
@@ -837,9 +833,10 @@ page 14228880 "Sales Order C&C Card"
         end;
 
         SetApplyAmount(-"Cash Applied (Current)");//TBR
-
-
         //AdjustShortages;
+
+        SlsHdr.Modify();
+        COMMIT();
 
         SalesPost.Run(SlsHdr);
 

@@ -121,14 +121,15 @@ page 14228883 "C&C Receive Cash"
     trigger OnAfterGetRecord()
 
     begin
+        SalesHeader.GET(Rec."Document Type", Rec."No.");
 
-        Tendered := "Cash Tendered";
-        AppliedToOrder := "Cash Applied (Current)";
-        ApplyToOtherOrders := "Entered Amount to Apply";
-        Applied := CalcApplied;
+        Tendered := SalesHeader."Cash Tendered";
+        AppliedToOrder := SalesHeader."Cash Applied (Current)";
+        ApplyToOtherOrders := SalesHeader."Entered Amount to Apply";
+        Applied := CalcApplied();
 
         Clear(grecCustomer);
-        if grecCustomer.Get("Bill-to Customer No.") then begin
+        if grecCustomer.Get(SalesHeader."Bill-to Customer No.") then begin
             grecCustomer.CalcFields("Balance (LCY)");
         end;
     end;
@@ -140,18 +141,18 @@ page 14228883 "C&C Receive Cash"
         lAmountRemaining: Decimal;
     begin
         lAmountRemaining := ibGetPaymentAmount();
-        Applied := CalcApplied;
+        Applied := CalcApplied();
 
         if (
           (CloseAction = ACTION::OK)
         ) then begin
-
-            "Cash vs Amount Including Tax" := "Amount Including VAT";
-            "Cash Tendered" := Tendered;
-            "Cash Applied (Current)" := AppliedToOrder;
-            "Entered Amount to Apply" := ApplyToOtherOrders;
-            "Cash Applied (Other)" := Applied;
-            Modify(true);
+            SalesHeader.GET(Rec."Document Type", Rec."No.");
+            SalesHeader."Cash vs Amount Including Tax" := "Amount Including VAT";
+            SalesHeader."Cash Tendered" := Tendered;
+            SalesHeader."Cash Applied (Current)" := AppliedToOrder;
+            SalesHeader."Entered Amount to Apply" := ApplyToOtherOrders;
+            SalesHeader."Cash Applied (Other)" := Applied;
+            SalesHeader.Modify(true);
             Commit;
 
 
@@ -179,6 +180,7 @@ page 14228883 "C&C Receive Cash"
         gpagSalesOrderCC: Page "Sales Order C&C Card";
         grecUserSetup: Record "User Setup";
         grecSalesAndRecSetup: Record "Sales & Receivables Setup";
+        SalesHeader: Record "Sales Header";
 
 
     procedure ChangeDue() Change: Decimal
@@ -314,7 +316,6 @@ page 14228883 "C&C Receive Cash"
         if CustLedgEntry.Find('-') then begin
             repeat
                 Applied += CustLedgEntry."Amount to Apply";
-
             until CustLedgEntry.Next = 0;
         end;
     end;
@@ -329,7 +330,9 @@ page 14228883 "C&C Receive Cash"
         end;
 
         pdecAppliedToOrder := MIN(pdecAppliedToOrder, Tendered - ApplyToOtherOrders);
+
         pdecAppliedToOrder := MAX(0, pdecAppliedToOrder);
+
         pdecAppliedToOrder := MIN(pdecAppliedToOrder, "Amount Including VAT");
 
         exit(pdecAppliedToOrder);

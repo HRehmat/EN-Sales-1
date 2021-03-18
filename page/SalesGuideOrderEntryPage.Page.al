@@ -362,6 +362,8 @@ page 14228900 "Sales Guide Order Entry Page"
                     SalesHeaderL."Document Type" := "Document Type"::Order;
                     SalesHeaderL."No." := '';
                     SalesHeaderL.Insert(true);
+                    SalesHeaderL."Terminal Market SO" := true;
+                    SalesHeaderL.Modify(true);
                     SalesHeaderL.SetRecFilter;
                     PAGE.Run(14228900, SalesHeaderL);
                 end;

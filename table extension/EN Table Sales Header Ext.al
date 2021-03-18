@@ -96,6 +96,10 @@ tableextension 14228880 "EN Sales Header Ext" extends "Sales Header"
         {
             DataClassification = ToBeClassified;
         }
+        field(14228903; "Terminal Market SO"; Boolean)
+        {
+            DataClassification = ToBeClassified;
+        }
     }
 
     keys

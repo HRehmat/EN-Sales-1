@@ -8,7 +8,10 @@ page 14228903 "Term. Market Sales Order List"
     SourceTable = "Sales Header";
     SourceTableView = SORTING("Document Type", "No.")
                       ORDER(Ascending)
-                      WHERE("Document Type" = CONST(Order));
+                      WHERE("Document Type" = CONST(Order), "Terminal Market SO" = const(true));
+    ApplicationArea = All;
+    UsageCategory = Lists;
+
 
     layout
     {
