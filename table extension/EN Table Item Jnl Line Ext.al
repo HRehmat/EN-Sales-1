@@ -2,7 +2,11 @@ tableextension 14229103 "Item Jnl. Line Ext" extends "Item Journal Line"
 {
     fields
     {
-
+        field(14229120; "Order Type Ext"; Enum "Order type Ext")
+        {
+            DataClassification = ToBeClassified;
+            
+        }
     }
 
     procedure GetCostingQty(FldNo: Integer): Decimal

@@ -10,6 +10,11 @@ tableextension 14228907 ItemLedgerExt extends "Item Ledger Entry"
         {
             DataClassification = ToBeClassified;
         }
+        field(14229120; "Order Type Ext"; Enum "Order type Ext")
+        {
+            DataClassification = ToBeClassified;
+            
+        }
     }
     procedure GetCostingQty(): Decimal
     begin
